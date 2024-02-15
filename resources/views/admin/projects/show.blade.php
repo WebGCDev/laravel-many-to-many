@@ -12,7 +12,7 @@
         <li>Linguaggi di programmazione: {{$project->lang}}</li>
         <li>Link: {{$project->link_github}}</li>
         <li>Tecnologie in uso:
-          @foreach ($project->technologys as $technology) {{$technology->$title}},
+          @foreach ($project->technologies as $technology) {{$technology->title}},
           @endforeach
         </li>
         
