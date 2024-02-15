@@ -31,7 +31,9 @@ class StoreProjectRequest extends FormRequest
             'contributors' => 'nullable|string|max:300',
             'lang' => 'nullable|string|max:60',
             'link_github' => 'nullable|url',
-            'type_id'=> 'nullable|exists:types,id',         //Non permette a Mr.Robot di non far bloccare Laravel
+            'type_id'=> 'nullable|exists:types,id',         
+            //Non permette a Mr.Robot di non far bloccare Laravel
+            'technologies'=>'nullable|exists:technologies,id',
         ];
     }
 }
